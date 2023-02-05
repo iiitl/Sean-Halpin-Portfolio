@@ -62,6 +62,7 @@ a:hover{
     left: 26vw;
     position: absolute;
     transition: all 1s;
+    z-index: -20;
     /* background-image: url(https://web.archive.org/web/20180901170713im_/http:/seanhalpin.io/assets/img/ui/cloud.svg); */
 }
 .cloud2{
@@ -70,6 +71,7 @@ a:hover{
     left: 66vw;
     position: absolute;
     transition: all 1s;
+    z-index: -20;
     /* background-image: url(https://web.archive.org/web/20180901170713im_/http:/seanhalpin.io/assets/img/ui/cloud.svg); */
 }
 .lan{
