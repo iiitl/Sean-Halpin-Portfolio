@@ -176,6 +176,11 @@ hr{
     object-fit: cover;
     /* object-position:top; */
     animation: count 4s infinite cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+.typoimg2 #bubble{
+animation-delay:.6s;
+
 }
 @keyframes count{
     0%{
