@@ -175,9 +175,18 @@ hr{
     border-radius: 50%;
     object-fit: cover;
     /* object-position:top; */
-    animation: count 4s infinite cubic-bezier(0.075, 0.82, 0.165, 1);
+    /* animation: count 4s infinite cubic-bezier(0.075, 0.82, 0.165, 1); */
 }
-@keyframes count{
+
+.bubble-1 {
+  animation: count-1 4s infinite cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+.bubble-2 {
+  animation: count-2 4s infinite cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes count-2{
     0%{
         object-position: top;
     }
@@ -193,6 +202,27 @@ hr{
     100%{
         object-position: top;
     }
+}
+
+@keyframes count-1{
+  0%{
+      object-position: top;
+  }
+  12%{
+      object-position: center;
+  }
+  37%{
+      object-position: bottom;
+  }
+  62%{
+      object-position: center;
+  }
+  87%{
+      object-position: top;
+  }
+  100% {
+      object-position: top;
+  }
 }
 #page2 > h1{
     text-align: center;
