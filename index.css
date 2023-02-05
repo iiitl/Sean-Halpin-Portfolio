@@ -272,13 +272,15 @@ footer{
         top: 45vh;
         left: 20vw;
         position: absolute;
+        z-index: -1;
         /* background-image: url(https://web.archive.org/web/20180901170713im_/http:/seanhalpin.io/assets/img/ui/cloud.svg); */
     }
     .cloud2{
         /* width: 30vw; */
         top: 23vh;
-        left: 66vw;
+        left: 50vw;
         position: absolute;
+        z-index: -1;
         /* background-image: url(https://web.archive.org/web/20180901170713im_/http:/seanhalpin.io/assets/img/ui/cloud.svg); */
     }
     .nav{
