@@ -289,14 +289,6 @@ footer{
         align-items: center;
         width: 40vw;
     }
-    .msgme > p{
-        color: white;
-        opacity: 1;
-    }
-    .msgme>img{
-        margin-right: 1%;
-        
-    }
     .lan{
         width: 99.0vw;
     }
