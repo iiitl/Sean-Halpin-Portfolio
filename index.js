@@ -29,6 +29,22 @@ let rootElement = document.querySelector('html');
 
 
 
+//! PREFERRED MODE
+// check if dark mode is preferred
+let darkPreferred = (window.matchMedia('(prefers-color-scheme: dark)').matches);
+
+// change the root (html) element classes accordingly
+if(darkPreferred) {
+  rootElement.className = 'dark';
+  modeToggleBtn.textContent = 'light';
+}
+else {
+  rootElement.className = 'light';
+  modeToggleBtn.textContent = 'dark';
+}
+
+
+
 //! add the toggle-mode button function
 
 /*
