@@ -2,7 +2,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: #e0ebe7;
+    background-color: var(--main-bg-color);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 nav{
@@ -17,7 +17,7 @@ nav{
     /* border: 2px black dotted; */
 }
 nav a.active{
-    color: #386359;
+    color: var(--about-btn-color);
 }
 #navico{
     justify-content:flex-start;
@@ -33,18 +33,18 @@ nav a.active{
     justify-content: flex-end;
     align-items: center;
     
-    color: #50af9a;
+    color: var(--nav-a-color);
     text-decoration:dotted;
     font-size: 1.2em;
 }
 a:hover{
-    color: #386359;
+    color: var(--nav-a-hover-color);
 }
 #page1{
     margin-top: 180px;
 }
 .Imsean{
-    color: #50af9a;
+    color: var(--intro-name-color);
     font-family: 'Dancing Script', cursive;
     font-size: 5em;
     text-align: center;
@@ -52,7 +52,7 @@ a:hover{
 }
 .webd{
     text-align: center;
-    color: #50af9a;
+    color: var(--intro-info-color);
     font-size: 1.4em;
     padding-bottom: 7vh;
 }
@@ -83,7 +83,7 @@ a:hover{
     display: flex;
     flex-direction: column;
     width: 99.2vw;
-    background-color: white;
+    background-color: var(--page-2-bg-color);
     justify-content: center;
 }
 #page2 > img{
@@ -95,7 +95,7 @@ a:hover{
 }
 #page2 > h2{
     text-align: center;
-    color: #50af9a;
+    color: var(--page-2-h2);
     font-size: 2em;
     transition: font-size 0.3s;
     font-family: 'Raleway', sans-serif;
@@ -104,7 +104,7 @@ a:hover{
 #page2 > p{
     /* border: 1px black dotted; */
     text-align: center;
-    color: rgba(0, 0, 0, 0.699);
+    color: var(--page-2-info);
     font-size: 1.4em;
     font-family: 'EB Garamond', serif;
     margin-top: 0px;
@@ -161,11 +161,13 @@ hr{
     padding: 0px 5vw;
 }
 .texttypo > h2{
-    color: 50af9a;
+    color: var(--page-2-h2);
+    /* --page-2-h2 */
     font-family: 'Raleway', sans-serif;
 }
 .texttypo > p{
-    color: rgba(0, 0, 0, 0.699);
+    color: var(--page-2-info);
+    /* --page-2-info */
     font-size: 1.4em;
     font-family: 'EB Garamond', serif;
 }
@@ -196,14 +198,14 @@ hr{
 }
 #page2 > h1{
     text-align: center;
-    color: #3e8677;
+    color: var(--page-2-h1);
     font-size: 3em;
     font-family: 'Raleway', sans-serif;
     transition: font-size 0.3s;
 }
 .msgme{
     transition: background-color 0.3s;
-    background-color: #45b39a;
+    background-color: var(--msgme-btn-bg-color);
     height: 4vh;
     display: flex;
     justify-content: center;
@@ -218,7 +220,7 @@ hr{
     
 }
 .msgme:hover{
-    background-color: #378f7a;
+    background-color: var(--msgme-btn-bg-color-hover);
 }
 a{
     text-decoration: none;
@@ -233,13 +235,14 @@ a{
     opacity: 30%;
     text-decoration: none;
     font-size: 1.2rem;
-    color: black;
+    color: var(--msgme-p-color);
+    /* --msgme-p-color */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     white-space: nowrap;
 }
 footer{
     text-decoration: none;
-    color: #50af9a;
+    color: var(--footer-text-color);
     text-align: center;
 }
 .links{
@@ -248,11 +251,11 @@ footer{
     justify-content:center;
 }
 .links > a{
-    color: #50af9a;
+    color: var(--footer-links-color);
     padding: 5vh 3vw;
 }
 .links > a:hover{
-    color: #275248;
+    color: var(--footer-links-hover-color);
 }
 .last{
     padding-bottom: 4vh;
@@ -304,7 +307,7 @@ footer{
     }
     #page2 > h2{
         text-align: center;
-        color: #50af9a;
+        color: var(--page-2-h2);
         font-size: 1.5em;
         font-family: 'Raleway', sans-serif;
         /* border: 1px black dotted; */
@@ -312,7 +315,7 @@ footer{
     #page2 > p{
         /* border: 1px black dotted; */
         text-align: center;
-        color: rgba(0, 0, 0, 0.699);
+        color: var(--page-2-info);
         font-size: 1.2em;
         font-family: 'EB Garamond', serif;
         margin-top: 0px;
@@ -344,3 +347,234 @@ footer{
         text-align: right;
     }
 }
+
+
+
+
+/* -------------------------------------------------------------- */
+
+/*! LIGHT AND DARK MODE CREATION */
+
+
+.navtext#mode-toggle span {
+  /* border: 1px solid red; */
+  padding: 7px 10px 5px 10px;
+  color: var(--mode-btn-color);
+  background-color: var(--mode-btn-bg-color);
+  border-radius: 10px 10px 10px 10px;
+  letter-spacing: 0.07rem;
+  transition: 0.3s ease;
+
+}
+
+.navtext#mode-toggle span:hover {
+  background-color: var(--mode-btn-hover-bg-color);
+  transition: 0.3s ease;
+}
+
+
+/*
+
+:root {
+  --main-bg-color: #1a2f2a;
+
+  --page-2-bg-color: #2a574d;
+  
+  --page-2-h2:#8fd182;
+
+
+  --page-2-h1:#adfa9d;
+
+  
+  --page-2-info: white;
+
+
+  --msgme-btn-bg-color: #45b39a;
+  --msgme-btn-bg-color-hover: #8fd381 ;
+  --msgme-p-color: black;
+
+
+  --intro-name-color: white;
+  --intro-info-color: white;
+
+  --nav-a-color: #50af9a;
+  --nav-a-hover-color: rgb(200, 236, 157);
+
+  --footer-bg-color: #50af9a;
+  --footer-links-color: #50af9a;
+  --footer-text-color: #50af9a;
+  --footer-links-hover-color: #275248;
+
+  --mode-btn-color: black;
+  --mode-btn-bg-color: #50af9a;
+  --mode-btn-hover-bg-color: white;
+
+}
+
+*/
+
+/*! to apply transition while changing the color mode */
+* {
+  transition: 0.5s ease;
+
+}
+
+
+
+:root {
+  --main-bg-color: #e0ebe7;
+
+  --page-2-bg-color: white;
+  --page-2-h2:#50af9a;
+  --page-2-h1:#3e8677;
+  --page-2-info: rgba(0, 0, 0, 0.699);
+
+
+  --msgme-btn-bg-color: #45b39a;
+  --msgme-btn-bg-color-hover: #adfa9d;
+  --msgme-p-color: black;
+
+  --about-btn-color: #275248;
+
+  --intro-name-color: #50af9a;
+  --intro-info-color: #50af9a;
+
+  --nav-a-color: #50af9a;
+  --nav-a-hover-color: #386359;
+
+  --footer-bg-color: #50af9a;
+  --footer-links-color: #50af9a;
+  --footer-text-color: #50af9a;
+  --footer-links-hover-color: #275248;
+
+  --mode-btn-color: white;
+  --mode-btn-bg-color: #386359;
+  --mode-btn-hover-bg-color: #112420;
+}
+
+
+/* media query to choose the default color scheme set up by browser */
+
+@media(prefers-color-scheme : dark) {
+  :root {
+    --main-bg-color: #1a2f2a;
+
+  /* #386359 */
+
+  --page-2-bg-color: #2a574d;
+  
+  --page-2-h2:#8fd182;
+  /* 50af9a */
+
+  --page-2-h1:#adfa9d;
+  /* 3e8677 */
+  
+  --page-2-info: white;
+
+
+  --msgme-btn-bg-color: #45b39a;
+  --msgme-btn-bg-color-hover: #8fd381 ;
+  --msgme-p-color: black;
+
+
+  --intro-name-color: white;
+  --intro-info-color: white;
+
+  --nav-a-color: #50af9a;
+  --nav-a-hover-color: rgb(200, 236, 157);
+
+  --footer-bg-color: #50af9a;
+  --footer-links-color: #50af9a;
+  --footer-text-color: #50af9a;
+  --footer-links-hover-color: #275248;
+
+  --mode-btn-color: black;
+  --mode-btn-bg-color: #50af9a;
+  --mode-btn-hover-bg-color: white;
+
+  }
+}
+
+
+/* light mode color variables */
+:root.light {
+  --main-bg-color: #e0ebe7;
+
+  --page-2-bg-color: white;
+  --page-2-h2:#50af9a;
+  --page-2-h1:#3e8677;
+  --page-2-info: rgba(0, 0, 0, 0.699);
+
+
+  --msgme-btn-bg-color: #45b39a;
+  --msgme-btn-bg-color-hover: #adfa9d;
+  --msgme-p-color: black;
+
+  --about-btn-color: #275248;
+
+  --intro-name-color: #50af9a;
+  --intro-info-color: #50af9a;
+
+  --nav-a-color: #50af9a;
+  --nav-a-hover-color: #386359;
+
+  --footer-bg-color: #50af9a;
+  --footer-links-color: #50af9a;
+  --footer-text-color: #50af9a;
+  --footer-links-hover-color: #275248;
+
+  --mode-btn-color: white;
+  --mode-btn-bg-color: #386359;
+  --mode-btn-hover-bg-color: #112420;
+
+
+}
+
+
+
+/* dark mode color variables */
+:root.dark {
+  --main-bg-color: #1a2f2a;
+
+  --page-2-bg-color: #2a574d;
+  
+  --page-2-h2:#8fd182;
+  /* 50af9a */
+
+  --page-2-h1:#adfa9d;
+  /* 3e8677 */
+  
+  --page-2-info: white;
+
+
+  --msgme-btn-bg-color: #45b39a;
+  --msgme-btn-bg-color-hover: #8fd381 ;
+  --msgme-p-color: black;
+
+  --about-btn-color: white;
+
+  --intro-name-color: white;
+  --intro-info-color: white;
+
+  --nav-a-color: #50af9a;
+  --nav-a-hover-color: rgb(200, 236, 157);
+
+  --footer-bg-color: #50af9a;
+  --footer-links-color: #50af9a;
+  --footer-text-color: #50af9a;
+  --footer-links-hover-color: white;
+
+  --mode-btn-color: black;
+  --mode-btn-bg-color: #50af9a;
+  --mode-btn-hover-bg-color: white;
+
+
+}
+
+
+
+
+
+
+
+/* -------------------------------------------------------------- */
