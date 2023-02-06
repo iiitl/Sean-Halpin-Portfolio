@@ -453,49 +453,6 @@ footer{
 }
 
 
-/* media query to choose the default color scheme set up by browser */
-
-@media(prefers-color-scheme : dark) {
-  :root {
-    --main-bg-color: #1a2f2a;
-
-  /* #386359 */
-
-  --page-2-bg-color: #2a574d;
-  
-  --page-2-h2:#8fd182;
-  /* 50af9a */
-
-  --page-2-h1:#adfa9d;
-  /* 3e8677 */
-  
-  --page-2-info: white;
-
-
-  --msgme-btn-bg-color: #45b39a;
-  --msgme-btn-bg-color-hover: #8fd381 ;
-  --msgme-p-color: black;
-
-
-  --intro-name-color: white;
-  --intro-info-color: white;
-
-  --nav-a-color: #50af9a;
-  --nav-a-hover-color: rgb(200, 236, 157);
-
-  --footer-bg-color: #50af9a;
-  --footer-links-color: #50af9a;
-  --footer-text-color: #50af9a;
-  --footer-links-hover-color: #275248;
-
-  --mode-btn-color: black;
-  --mode-btn-bg-color: #50af9a;
-  --mode-btn-hover-bg-color: white;
-
-  }
-}
-
-
 /* light mode color variables */
 :root.light {
   --main-bg-color: #e0ebe7;
